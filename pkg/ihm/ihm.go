@@ -18,7 +18,7 @@ func App() {
 
 	g0 := widgets.NewGauge()
 	g0.Title = "CPU"
-	g0.SetRect(30, 30, 10, 10)
+	g0.SetRect(0, 0, 50, 3)
 	g0.Percent = 75
 	g0.BarColor = ui.ColorWhite
 	g0.BorderStyle.Fg = ui.ColorWhite
