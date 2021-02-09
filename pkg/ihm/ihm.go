@@ -23,4 +23,15 @@ func App() {
 	g0.BarColor = ui.ColorRed
 	g0.BorderStyle.Fg = ui.ColorWhite
 	g0.TitleStyle.Fg = ui.ColorCyan
+
+	ui.Render(g0)
+
+	uiEvents := ui.PollEvents()
+	for {
+		e := <-uiEvents
+		switch e.ID {
+		case "q", "<C-c>":
+			return
+		}
+	}
 }
