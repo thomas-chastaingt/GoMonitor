@@ -7,6 +7,7 @@ import (
 	"github.com/shirou/gopsutil/mem"
 )
 
+//GetMemoryUsage permits to have current memory
 func GetMemoryUsage() int {
 	memory, err := mem.VirtualMemory()
 	if err != nil {
