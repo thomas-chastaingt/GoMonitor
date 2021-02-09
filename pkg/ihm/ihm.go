@@ -17,12 +17,12 @@ func App() {
 	defer ui.Close()
 
 	g0 := widgets.NewGauge()
-	g0.Title = "Slim Gauge"
-	g0.SetRect(20, 20, 30, 30)
+	g0.Title = "CPU"
+	g0.SetRect(30, 30, 10, 10)
 	g0.Percent = 75
-	g0.BarColor = ui.ColorRed
+	g0.BarColor = ui.ColorWhite
 	g0.BorderStyle.Fg = ui.ColorWhite
-	g0.TitleStyle.Fg = ui.ColorCyan
+	g0.TitleStyle.Fg = ui.ColorWhite
 
 	ui.Render(g0)
 
