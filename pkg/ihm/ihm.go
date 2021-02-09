@@ -11,7 +11,7 @@ import (
 	"github.com/gizak/termui/v3/widgets"
 )
 
-const run = true
+var run = true
 
 func App() {
 	//init the MHI
